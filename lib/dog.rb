@@ -1,1 +1,17 @@
-# Add your code here
+class Dog
+  aattr_accessor :name
+  
+  @@all = []
+  
+  def initialize(name)
+    @name = name
+    @@all << self
+  end
+  
+  def self.all
+    @@all
+  end
+  
+  def self.print_all
+    @@all.each {|w| puts "#{w}"}
+end

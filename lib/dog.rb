@@ -14,4 +14,5 @@ class Dog
   
   def self.print_all
     @@all.each {|w| puts "#{w}"}
+  end
 end
